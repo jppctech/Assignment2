@@ -3,7 +3,7 @@ import { useState } from 'react';
 import useSWR from 'swr';
 import { useRouter } from 'next/navigation'
 
-const fetcher = (...args: any[]) => fetch(...args).then((res) => res.json());
+const fetcher = (...args: any[]) => fetch(args).then((res) => res.json());
 
 const LoginPage = () => {
 
